@@ -1,8 +1,10 @@
 const express = require('express')
 const router = express.Router()
-const {getRoute,postRoute,putRoute,patchRoute} = require('../Controllers/egController')
+const {getRoute,getByIdRoute,postRoute,putRoute,patchRoute, deleteRoute} = require('../Controllers/egController')
 router.get('/get',getRoute)
+router.get('get/:id',getByIdRoute)
 router.post('/post',postRoute)
-router.put('/put',putRoute)
+router.put('/put/:id',putRoute)
 router.patch('/patch',patchRoute)
+router.delete('/delete',deleteRoute)
 module.exports = router

@@ -11,6 +11,7 @@ const Navbar = () => {
         <li className="element"><Link to="/con">Contact Us</Link></li>
         <li className="element"><Link to="/form">Form</Link></li>
         <li className="element"><Link to="/f">Effect</Link></li>
+        <li classname="element"><Link to="/todos">Todos</Link></li>
       </div></ul>
     </nav>
   );

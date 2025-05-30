@@ -8,6 +8,7 @@ import { useEffect } from "react";
 import State from "./hooks/State";
 import Form from "./hooks/form";
 import Effect from "./hooks/Effect";
+import Todos from "./Pages/Todos";
 
 function App() {
   let name = 'hema' 
@@ -28,6 +29,7 @@ useEffect(()=>{
         <Route path="/st" element={<State/>}/>
         <Route path="/form" element={<Form/>}/>
         <Route path="/f" element={<Effect/>}/>
+        <Route path="/todos" element={<Todos/>}/>
       </Routes>
     </>
   )
