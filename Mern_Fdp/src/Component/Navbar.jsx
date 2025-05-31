@@ -11,9 +11,9 @@ const Navbar = () => {
         <li className="element"><Link to="/con">Contact Us</Link></li>
         <li className="element"><Link to="/form">Form</Link></li>
         <li className="element"><Link to="/f">Effect</Link></li>
-        <li classname="element"><Link to="/todos">Todos</Link></li>
-        <li classname="element"><Link to="/Login">Login</Link></li>
-        <li classname="element"><Link to="/SignUp">Signup</Link></li>
+        <li className="element"><Link to="/todos">Todos</Link></li>
+        <li className="element"><Link to="/Login">Login</Link></li>
+        <li className="element"><Link to="/SignUp">Signup</Link></li>
       </div></ul>
     </nav>
   );
