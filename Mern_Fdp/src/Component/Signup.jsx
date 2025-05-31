@@ -10,7 +10,7 @@ const Signup = () => {
         e.preventDefault()
         try {
             const res = await
-                axios.post('https://mern-fdp-2.onrender.com/user/signup', {
+                axios.post('http://mern-fdp-2.onrender.com/user/signup', {
                     username,
                     password
                 })
