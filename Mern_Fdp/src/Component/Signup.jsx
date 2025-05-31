@@ -9,10 +9,8 @@ const Signup = () => {
     const handleSubmit = async (e) => {
         e.preventDefault()
         try {
-            const res = await axios.post('http://mern-fdp-2.onrender.com/user/signup', {
-                    username,
-                    password
-                })
+            console.log(username,password)
+            const res = await axios.post('https://mern-fdp-2.onrender.com/user/signup', {username,password})
             setMessage(res.data.message)
         } catch (err) {
             setMessage('signup failed')
