@@ -9,8 +9,7 @@ const Signup = () => {
     const handleSubmit = async (e) => {
         e.preventDefault()
         try {
-            const res = await
-                axios.post('http://mern-fdp-2.onrender.com/user/signup', {
+            const res = await axios.post('http://mern-fdp-2.onrender.com/user/signup', {
                     username,
                     password
                 })

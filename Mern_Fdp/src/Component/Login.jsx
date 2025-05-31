@@ -8,8 +8,7 @@ const Login = () => {
     const handleSubmit = async (e) => {
         e.preventDefault()
         try {
-            const res = await
-                axios.post('http://mern-fdp-2.onrender.com/user/login', {
+            const res = await axios.post('http://mern-fdp-2.onrender.com/user/login', {
                     username,
                     password
                 })
