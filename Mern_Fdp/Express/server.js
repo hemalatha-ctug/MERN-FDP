@@ -5,8 +5,8 @@ const connectDB = require('./config/db')
 const router = require('./Routers/egRoute')
 const cors=require('cors')
 
-connectDB();
 dotenv.config();
+connectDB();
 const PORT = process.env.PORT;
 app.use(cors())
 app.use(express.json())
