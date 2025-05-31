@@ -9,6 +9,8 @@ import State from "./hooks/State";
 import Form from "./hooks/form";
 import Effect from "./hooks/Effect";
 import Todos from "./Pages/Todos";
+import  Login  from "./Component/Login";
+import SignUp from "./Component/Signup";
 
 function App() {
   let name = 'hema' 
@@ -30,6 +32,8 @@ useEffect(()=>{
         <Route path="/form" element={<Form/>}/>
         <Route path="/f" element={<Effect/>}/>
         <Route path="/todos" element={<Todos/>}/>
+        <Route path="/Login" element={<Login/>}/>
+        <Route path="/SignUp" element={<SignUp/>}/>
       </Routes>
     </>
   )
